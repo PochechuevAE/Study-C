@@ -2,6 +2,11 @@
 
 int GetSumFrom1ToN(int a)
 {
-  
+  int result = 0;
+  int count = 0;
+  for (int i = 0; count <= a; i++)
+  {
+
+  }
 }
 
