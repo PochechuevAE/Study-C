@@ -10,19 +10,19 @@ int[] FindSumOfPairs(int[] array) // Находит пары элементов 
 {
     int newSize = array.Length / 2;
 
-    if(array.Length % 2 == 1)
+    if(array.Length % 2 == 1) // Проверяем длинну массива, и если она не четная, то добавляем еще элемент
     {
         newSize++;
     }
 
     int[] result = new int[newSize];
 
-    for (int i = 0; i < array.Length / 2; i++)
+    for (int i = 0; i < array.Length / 2; i++) //перемножаем попарно элементы
     {
         result[i] = array[i] * array[array.Length - 1 - i];
     }
 
-   if(array.Length % 2 == 1)
+   if(array.Length % 2 == 1) // Проверяем если нечетный, то записываем средний элемент
     {
         result[newSize - 1] = array[array.Length / 2];
     }
