@@ -6,7 +6,7 @@ PrintArray(arr);
 System.Console.WriteLine($"Сумма положительных элементов массива равна {GetSumMoreZero(arr)}");
 System.Console.WriteLine($"Сумма положительных элементов массива равна {GetSumLessZero(arr)}");
 
-int [] GenerateArray(int Length) 
+int [] GenerateArray(int Length) // генерируем рандомный массив
 {
     int [] result = new int[Length];
     for (int i = 0; i < result.Length; i++)
@@ -17,7 +17,7 @@ int [] GenerateArray(int Length)
     return result;
 } 
 
-void PrintArray(int [] array)
+void PrintArray(int [] array) // Печатаем этот массив
 {
     foreach (int i in array)
     {
@@ -26,7 +26,7 @@ void PrintArray(int [] array)
     System.Console.WriteLine();
 }
 
-int GetSumMoreZero(int [] array) 
+int GetSumMoreZero(int [] array) // Сумма положительных элементов массива
 {
     int result = default;
     for (int i = 0; i < array.Length; i++)
@@ -40,7 +40,7 @@ int GetSumMoreZero(int [] array)
     return result;
 }
 
-int GetSumLessZero(int [] array) 
+int GetSumLessZero(int [] array) // Сумма отрицательных элементов массива
 {
     int result = default;
     for (int i = 0; i < array.Length; i++)
