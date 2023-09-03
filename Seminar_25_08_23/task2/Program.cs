@@ -1,4 +1,3 @@
-﻿//Задача 26: Напишите программу, которая принимает на вход число и выдаёт количество цифр в числе
 System.Console.WriteLine($"{GetLengthNum(48736)}");
 
 int GetLengthNum(int num)
