@@ -15,4 +15,4 @@ int GetSumFrom1toN(int a)
 
     return result;
 }
->>>>>>>>> Temporary merge branch 2
+
