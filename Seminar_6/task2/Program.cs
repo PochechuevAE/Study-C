@@ -12,7 +12,7 @@ bool IsTriangle(int x, int y, int z)
 {
     return ((x + y) > z) && ((x + z) > y) && ((y + z) > z);
 }
-    
+// решение через лямбда методы    
 // var istriangle = (int x, int y, int z) =>
 //     ((x + y) > z) && ((x + z) > y) && ((y + z) > z)
 // System.Console.WriteLine($"{x}  {y}  {z}");
