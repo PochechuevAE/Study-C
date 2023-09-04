@@ -18,8 +18,12 @@ var persons = new List<Person>{ // Создаем базу
         Name = "Igor",
     },
 };
+persons.Add(new Person{
+        Id = 5,
+        Name = "Sahara",
+});
 
-System.Console.WriteLine(persons.Where(p => p.Id == 1).FirstOrDefault()?.Name); // Обращаемся к базе 1 элем базы
+System.Console.WriteLine(persons.Where(p => p.Id == 5).FirstOrDefault()?.Name); // Обращаемся к базе 1 элем базы
 System.Console.WriteLine(persons[1].Name); // Обращаемся к базе к 1 элем массива
 
 
